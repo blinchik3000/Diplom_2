@@ -67,12 +67,12 @@ public class UserUpdateTest {
     @DisplayName("Check User can be updated without authorization")
     @Description("Checking user fields have not changed after update without authorization")
     public void checkUserCanBeUpdatedWithoutAuthorization() {
-        String tokenNull = "";
+        String tokenIsEmpty = "";
 
         user.setEmail(tempEmail + "1");
         user.setPassword(tempPassword + "1");
         user.setName(tempName + "1");
-        ValidatableResponse responseUpdate = userClient.update(user, tokenNull);
+        ValidatableResponse responseUpdate = userClient.update(user, tokenIsEmpty);
         responseUpdate.assertThat().statusCode(401)
                 .and().body("success", equalTo(false))
                 .and().body("message", equalTo("You should be authorised"));
