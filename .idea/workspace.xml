@@ -4,11 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18491c9b-e33c-42cc-a013-c732be886361" name="Changes" comment="" />
+    <list default="true" id="18491c9b-e33c-42cc-a013-c732be886361" name="Changes" comment="add Junit,allure,restAssured dependencies to pom&#10;add User Class&#10;add UserClient class&#10;add User endpoints check tests &#10;user covered">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ingredients/IngredientsClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/OrderClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/OrderGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/order/OrderCreateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/order/OrderGetUsersOrdersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2IEVjJplPHnuC8tMGf1EsD4Apwf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -19,9 +40,100 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.OrderGetUsersOrdersTest">
+    <configuration name="OrderCreateTest.checkOrderCanNotBeCreatedWithNullIngredient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="order" />
+      <option name="MAIN_CLASS_NAME" value="order.OrderCreateTest" />
+      <option name="METHOD_NAME" value="checkOrderCanNotBeCreatedWithNullIngredient" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderCreateTest.checkOrderCanNotBeCreatedWithWrongIngredient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="order" />
+      <option name="MAIN_CLASS_NAME" value="order.OrderCreateTest" />
+      <option name="METHOD_NAME" value="checkOrderCanNotBeCreatedWithWrongIngredient" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderGetUsersOrdersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="order" />
+      <option name="MAIN_CLASS_NAME" value="order.OrderGetUsersOrdersTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderGetUsersOrdersTest.checkGettingOrderForUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="order" />
+      <option name="MAIN_CLASS_NAME" value="order.OrderGetUsersOrdersTest" />
+      <option name="METHOD_NAME" value="checkGettingOrderForUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderGetUsersOrdersTest.checkGettingOrderForUserWithoutAuthorization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="order" />
+      <option name="MAIN_CLASS_NAME" value="order.OrderGetUsersOrdersTest" />
+      <option name="METHOD_NAME" value="checkGettingOrderForUserWithoutAuthorization" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.OrderGetUsersOrdersTest" />
+        <item itemvalue="JUnit.OrderCreateTest.checkOrderCanNotBeCreatedWithWrongIngredient" />
+        <item itemvalue="JUnit.OrderGetUsersOrdersTest.checkGettingOrderForUserWithoutAuthorization" />
+        <item itemvalue="JUnit.OrderGetUsersOrdersTest.checkGettingOrderForUser" />
+        <item itemvalue="JUnit.OrderCreateTest.checkOrderCanNotBeCreatedWithNullIngredient" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -31,6 +143,14 @@
       <option name="presentableId" value="Default" />
       <updated>1669746866023</updated>
     </task>
+    <task id="LOCAL-00001" summary="add Junit,allure,restAssured dependencies to pom&#10;add User Class&#10;add UserClient class&#10;add User endpoints check tests &#10;user covered">
+      <created>1670174017744</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670174017744</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -43,5 +163,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add Junit,allure,restAssured dependencies to pom&#10;add User Class&#10;add UserClient class&#10;add User endpoints check tests &#10;user covered" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Junit,allure,restAssured dependencies to pom&#10;add User Class&#10;add UserClient class&#10;add User endpoints check tests &#10;user covered" />
   </component>
 </project>
